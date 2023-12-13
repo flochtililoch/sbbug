@@ -5,7 +5,10 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "sb": "yarn start --projectRoot storybook --watchFolders $PWD",
+    "sb:generate": "sb-rn-get-stories --config-path ./storybook",
+    "sb:server": "storybook-server --config-dir storybook/server",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-native start",
     "test": "jest",
     "lint": "eslint ."
   },

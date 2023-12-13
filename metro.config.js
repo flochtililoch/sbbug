@@ -6,6 +6,11 @@
  */
 
 module.exports = {
+  // Configure storybook
+  // https://github.com/storybookjs/react-native#additional-steps-update-your-metro-config
+  resolver: {
+    resolverMainFields: ['sbmodern', 'react-native', 'browser', 'main'],
+  },
   transformer: {
     getTransformOptions: async () => ({
       transform: {
